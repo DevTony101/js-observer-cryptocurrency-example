@@ -1,3 +1,1 @@
-window.onload = () => {
-  alert("hola mundo");
-}
+console.log("Hello World");
