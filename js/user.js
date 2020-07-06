@@ -11,7 +11,10 @@ export default class User extends Observer {
   }
 
   update(model) {
-    console.log(`${model.name} update!`);
+    console.log(
+      `%c${model.name} update!`,
+      `color: ${model.color}; font-weight: bold`
+    );
     console.log(`${this.name}, ${model.name} has changed its value!`);
     console.log(`New price: ${model.price}`);
   }

@@ -1,7 +1,7 @@
 import Subject from "./observer/subject.js";
 
 export default class CryptoCurrency extends Subject {
-  constructor(name, startingPrice) {
+  constructor(name, startingPrice, color) {
     super();
     if (arguments.length < 1) {
       throw new Error("At least one argument is required");
@@ -11,6 +11,7 @@ export default class CryptoCurrency extends Subject {
     } else {
       this.name = name;
       this.price = startingPrice;
+      this.color = color;
     }
   }
 

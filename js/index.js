@@ -1,8 +1,8 @@
 import CryptoCurrency from "./currency.js";
 import User from "./user.js";
 
-const bitcoin = new CryptoCurrency("Bitcoin");
-const ethereum = new CryptoCurrency("Ethereum");
+const bitcoin = new CryptoCurrency("Bitcoin", 10, "gold");
+const ethereum = new CryptoCurrency("Ethereum", 10, "purple");
 
 const users = [];
 users.push(new User("Jonas"));
