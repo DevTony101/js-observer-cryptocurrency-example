@@ -1,4 +1,4 @@
-import Observer from "./observer/observer";
+import Observer from "./observer/observer.js";
 
 export default class User extends Observer {
   constructor(name) {

@@ -1,4 +1,4 @@
-import Subject from "./observer/subject";
+import Subject from "./observer/subject.js";
 
 export default class CryptoCurrency extends Subject {
   constructor(name, startingPrice) {
