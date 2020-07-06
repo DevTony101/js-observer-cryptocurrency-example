@@ -15,7 +15,7 @@ export default class CryptoCurrency extends Subject {
   }
 
   increment(amount) {
-    if (typeof amount == "number") {
+    if (typeof amount === "number") {
       this.price += amount;
       this.notify();
     } else {
@@ -24,7 +24,7 @@ export default class CryptoCurrency extends Subject {
   }
 
   decrement(amount) {
-    if (typeof amount == "number") {
+    if (typeof amount === "number") {
       this.price -= amount;
       this.notify();
     } else {
