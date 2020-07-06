@@ -9,7 +9,7 @@ export default class Subject {
 
   unsubscribe(observer, areEqual) {
     if (typeof areEqual === "function") {
-      this.observers = this.observers.filters((o) => !areEqual(o, observer));
+      this.observers = this.observers.filter((o) => !areEqual(o, observer));
     } else {
       throw new Error("A function is required");
     }
